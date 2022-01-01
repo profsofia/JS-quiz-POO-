@@ -1,5 +1,5 @@
 //el objeto lo almacenamos en una variable
-export const data=[
+export const data =[
     {
         question:'Cual es la respuesta correcta',
         choices: [
@@ -10,7 +10,7 @@ export const data=[
         answer: 'word'
     },
     {
-        question:'Cual es la respuesta correcta',
+        question:'Cual es la respuesta correcta2',
         choices: [
             'vim',
             'vscode',
@@ -19,7 +19,7 @@ export const data=[
         answer: 'vscode'
     },
     {
-        question:'Cual es la respuesta correcta',
+        question:'Cual es la respuesta correcta3',
         choices: [
             'vim',
             'vscode',
@@ -27,5 +27,5 @@ export const data=[
         ],
         answer: 'vim'
     }
-]
+];
 
