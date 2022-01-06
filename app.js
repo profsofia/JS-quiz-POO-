@@ -17,19 +17,18 @@ const renderPage =(quiz, ui)=>{
     ui.showScore(quiz.score);
   } else{
     ui.showQuestion(quiz.getQuestionIndex().text);
+    ui.showProgress(quiz.questionIndex +1, quiz.questions.length);
     ui.showChoices(quiz.getQuestionIndex().choices, (currentChoice) => {
     quiz.guess(currentChoice);
     renderPage(quiz, ui);
   });
-  ui.showProgress(quiz.questionIndex +1, quiz.questions.length);
-  };
+  }
 
  
-}
+};
 
 
 function main(){
-  // @ts-ignore
   const quiz =  new Quiz(questions);
   //console.log(quiz);
   const ui = new UI();
